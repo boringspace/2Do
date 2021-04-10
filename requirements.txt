@@ -1,5 +1,14 @@
-sphinx
-pandas
+# Documentation requirements
+folium
+numpy
 matplotlib
-quantecon
-jupyter-book
+ipywidgets
+pandas
+nbclient
+sympy
+plotly
+bokeh
+altair
+sphinx-click
+sphinx_inline_tabs
+sphinxext-rediraffe~=0.2.3
