@@ -1,14 +1,3 @@
----
-jupytext:
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # Learn More
 
 We're about ready to wrap up this brief course on Python for scientific
@@ -25,19 +14,15 @@ excellent [NumPy](http://www.numpy.org/) library.
 
 For example, let\'s build some arrays
 
-```{code-cell} ipython3
 import numpy as np                     # Load the library
 
 a = np.linspace(-np.pi, np.pi, 100)    # Create even grid from -π to π
 b = np.cos(a)                          # Apply cosine to each element of a
 c = np.sin(a)                          # Apply sin to each element of a
-```
 
 Now let\'s take the inner product
 
-```{code-cell} ipython3
 b @ c
-```
 
 The number you see here might vary slightly due to floating point arithmetic
 but it\'s essentially zero.
@@ -59,14 +44,12 @@ provides additional functionality.
 For example, let\'s calculate $\int_{-2}^2 \phi(z) dz$ where $\phi$ is
 the standard normal density.
 
-```{code-cell} ipython3
 from scipy.stats import norm
 from scipy.integrate import quad
 
 ϕ = norm()
 value, error = quad(ϕ.pdf, -2, 2)  # Integrate using Gaussian quadrature
 value
-```
 
 SciPy includes many of the standard routines used in
 
@@ -123,43 +106,31 @@ Mathematica or Maple.
 The [SymPy](http://www.sympy.org/) library provides this functionality
 from within the Python shell.
 
-```{code-cell} ipython3
 from sympy import Symbol
 
 x, y = Symbol('x'), Symbol('y')  # Treat 'x' and 'y' as algebraic symbols
 x + x + x + y
-```
 
 We can manipulate expressions
 
-```{code-cell} ipython3
 expression = (x + y)**2
 expression.expand()
-```
 
 solve polynomials
 
-```{code-cell} ipython3
 from sympy import solve
 
 solve(x**2 + x + 2)
-```
 
 and calculate limits, derivatives and integrals
 
-```{code-cell} ipython3
 from sympy import limit, sin, diff
 
 limit(1 / x, x, 0)
-```
 
-```{code-cell} ipython3
 limit(sin(x) / x, x, 0)
-```
 
-```{code-cell} ipython3
 diff(sin(x), x)
-```
 
 The beauty of importing this functionality into Python is that we are
 working within a fully fledged programming language.
@@ -177,7 +148,6 @@ Pandas is fast, efficient, flexible and well designed.
 Here\'s a simple example, using some dummy data generated with Numpy\'s
 excellent `random` functionality.
 
-```{code-cell} ipython3
 import pandas as pd
 np.random.seed(1234)
 
@@ -186,11 +156,8 @@ dates = pd.date_range('28/12/2010', periods=5)
 
 df = pd.DataFrame(data, columns=('price', 'weight'), index=dates)
 print(df)
-```
 
-```{code-cell} ipython3
 df.mean()
-```
 
 ## Further Reading
 
