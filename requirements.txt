@@ -1,4 +1,5 @@
 # Documentation requirements
+jupyter-book
 folium
 numpy
 matplotlib
