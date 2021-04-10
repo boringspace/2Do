@@ -1,5 +1,5 @@
 (projekt)=
-# 2Do's
+# Projekt
 
 ## 8.4.2020
 
@@ -22,3 +22,16 @@
 - Konzeptionserstellung 
     - Unterkapitel mit SCRUM beschreiben
 - Einfügen der Unterkapitel aus Index in JB
+
+## 09.4.2020
+
+- Kein Update
+  - Punkte wie Tag davor
+
+## 10.4.2020
+
+- Kapitel draft schreiben
+  - Fehlende Kapitel und Unterkapitel ergänzen
+- Dateien und Screenshot auf Cloud ziehen
+  - Dateien und Screenshots kategorisieren
+  
